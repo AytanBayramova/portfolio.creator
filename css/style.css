@@ -1,0 +1,520 @@
+:root{
+    --narinci-reng: #ff8a56;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url(./reset.css);
+@import url(media_queries.css);
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 112.5px;
+}
+
+header a{
+    color: #333;
+    padding: 8px;
+}
+
+.nav-links *{
+    text-decoration: none;
+    color: #000;
+    padding-right: 20px; 
+}
+
+.fa-bars{
+    display: none;
+}
+
+@media (max-width:945px){
+    nav{
+        display: none;
+    }
+        .fa-bars {
+            display: flex;
+            cursor: default;
+        }
+
+        .introduction .intro-left-side h1{
+            text-align: center;
+        }
+
+        .introduction .intro-left-side p{
+            text-align: center;
+        }
+
+        .introduction .intro-left-side .book-a-call{
+            text-align: center;
+        }
+
+        header{
+            padding: 30px;
+            cursor: default;
+        }
+         
+        .intro-left-side{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin: 0 auto;
+            transform: translateX(2.5%);
+        }
+
+        .intro-right-side{
+           margin: 0 auto;
+        }
+        }
+
+@media (max-width:576px){
+    header{
+        padding:20px;
+    }
+}
+
+/* INTRODUCTION STAR */
+
+.introduction{
+    padding: 0 112.5px;
+    padding-top: 16.7px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap   ;
+}
+
+.intro-left-side{
+    padding-top: 117px;
+    min-width: 713px;
+}
+
+/* Bootstrap  mentiqi  */
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+   
+.intro-left-side h1{
+    font-size: 72px;
+    font-weight:700px;
+    margin-bottom: 34px;
+    }
+
+.intro-left-side h1 span{
+    color: var(--narinci-reng );
+    }
+
+    .intro-left-side p{
+        color: #666;
+    }
+
+    .book-a-call{
+        margin-top: 34px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .book-a-call button{
+    width: 151px;
+    height: 58px;
+    background: #222;
+    color: #fff;
+    margin-right: 30px;
+    }
+
+    .book-a-call a{
+        margin-right: 10px;
+        color: #222;
+    }
+
+    .intro-right-side{
+        margin-top: 70px;
+        min-width: 450px;
+    }
+
+    @media (max-width: 1456px) and (min-width: 946px){
+         .intro-left-side{
+            flex-basis: 100%;
+         }
+
+         .intro-left-side h1 , .intro-left-side p , .intro-left-side .book-a-call {
+            text-align: center;
+         }
+
+         .intrO-right-side{
+            margin: 0 auto;
+         }
+    }
+
+
+    /*TRUSTED BY SECTION STAR*/
+
+    .trusted-by h6{
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .partner-companies{
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 768px){
+        .partner-companies .partner-company:nth-child(even){
+            display: none;
+        }
+    }
+
+    @media(max-width:500px){
+        /* pseudo element/class */
+        .partner-companies .partner-company:not(:first-child){
+            display: none;
+        }
+    }
+
+    /*TRUSTED BY SECTION END*/
+
+    /*SWRVICES BY SECTION STAR*/
+    .services{
+        padding-top: 76px;
+    }
+
+    .services h6{
+        text-align: center;
+        color: #FF5E69;
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 2px;
+    }
+
+    .services h1{
+        text-align: center;
+        font-weight: 700;
+        font-size: 54px;
+    }
+
+    .services-cards{
+       display: flex;
+       padding: 70px 171px auto;
+       display: flex;
+       justify-content: space-around;
+    }
+     
+    .services-cards{
+        min-width: 250px;
+        flex-wrap: wrap;
+    }
+
+    .service-cards p{
+        width: 252px;
+    }
+
+    .service-cards ul{
+        list-style-type: square;
+        /*list-style-position: inside;*/
+    }
+
+
+    /*SERVICES BY SECTION END*/
+
+    /*PROJECTS BY SECTION STAR*/
+
+    .projects h3{
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        color: #B16CEA;
+       margin: 167px 1180px 20px 113px;
+    }
+
+    .project-left-side h2{
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: 1px;
+        color: #000;
+        margin: 20px 935px auto 113px;
+    }
+
+    .projects-sides{
+        display: flex;
+        justify-content: space-between;
+    }
+
+     .view-all-projects{
+        background: #222;
+        color: #fff;
+        width: 200px;
+        height: 58px;
+        margin-right: 112px;
+        margin-top:70px;
+        padding: 17px 30px 23px;
+    }
+
+    /*PROJECTS BY SECTION END*/
+
+    /*CARDS BY SECTION STAR*/
+
+    .cards{
+        display: flex;
+        
+    }
+
+     .cards h5{
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: #3C46FF;
+    }
+
+    .cards h1{
+        font-weight: 700;
+        font-size: 24px;
+        color: #000;
+    }
+
+    .cards p{
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+     .view-project{
+        display: flex;
+    }
+
+    .card{
+        margin-left: 10px;
+    }
+
+    .first-card{
+        margin-left: 113px;
+        margin-top: 70px;
+        margin-right: 24px;
+    }
+
+     .second-card{
+        margin-top: 70px;
+        margin-right: 24px;
+    }
+
+    .third-card{
+        margin-top: 70px;
+        margin-right: 24px;
+    }
+
+    .down{
+        background-color: #fff;
+        color: #000;
+    }
+
+    /*CARDS BY SECTION END*/
+
+    /*TWO-BUTTONS BY SECTION STAR*/
+
+    .two-buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .first-button{
+        margin-left: 768px;
+        margin-right: 7px; 
+        margin-top: 184px;
+    }
+
+    .second-button{
+        margin-left: 7px;
+        margin-right: 112px;
+        margin-top: 184px;
+    }
+
+    
+
+    /*TWO-BUTTONS BY SECTION END*/
+
+    /*BLACK AREA BY SECTION STAR*/
+
+    
+
+   
+    .blacks-area{
+        display: flex;
+        background-color: #000;
+        color: #fff;
+        width: 1440px;
+       height: 1637px;
+    }
+
+    .black-area{
+        display: flex;
+       
+        
+    }
+
+     .blogs{
+        font-size: 22px;
+        font-weight: 700;
+        color: #FFA84B;
+       
+        letter-spacing: 4px;
+    }
+
+    .latest-blog h1{
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: 1px;
+     
+    }
+
+    .blo{
+        margin-left: 113px;
+        margin-top: 276px;
+        margin-right: 190px;
+    }
+
+    .view-all{
+        display: flex;
+    }
+
+    .view-all h2{
+        font-weight: 700;
+        font-size: 18px;
+        
+    }
+
+    .five-black{
+        margin-left: 1px;
+        margin-top: 317px;
+    }
+
+    .five-black h5{
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .five-black h1{
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .five-black h2{
+        font-weight: 700;
+        font-size: 18px;
+    }
+
+    .read-the-article{
+        display: flex;
+    }
+
+    .read-the-article h2{
+      
+    }
+    
+    .five-black hr{
+        bottom: none;
+        top: 204px;
+        height: 1px;
+        color: rgba(255, 255, 255, 0.3);
+        width: 692.55px;
+      
+    }
+
+    .blacks-area{
+        position: relative;
+        z-index: 1;
+        bottom: -1px;
+       
+
+    }
+    
+    .projects{
+        position: relative;
+        z-index: 2;
+    }
+
+
+     /*BLACK AREA BY SECTION END*/
+
+     /*PRODUCT DESIGNER BY SECTION STAR*/
+
+     .product-designer h1{
+        font-weight: 700;
+        font-size: 22px;
+        letter-spacing: 4px;
+        color: #FF5E69;
+        margin-left: 113px;
+        margin-top: 156px;
+     }
+
+     .product-designer h2{
+        font-weight: 700;
+        font-size: 54px;
+        letter-spacing: 1px;
+        margin-left: 113px;
+        margin-top: 15px;
+     }
+
+     .that-isme p{
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 40px;
+        margin-left: 317px;
+        margin-top: 165px;
+     }
+
+     .product-designer {
+        display: flex;
+     }
+
+     .fourpic{
+        margin-left: 113px;
+        margin-top: 114.73px;
+     }
+
+     .uni-year{
+        display: flex;
+     }
+
+     .year{
+        display: flex;
+        margin-left: 140px;
+     }
+
+     .uni h4{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26.4px;
+     }
+
+     .uni p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+     }
+ 
+     .p p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20.8px;
+     }
+
+     .ox{
+        margin-left: 41.23px;
+     }
+
+     .edu-exp{
+        display: flex;
+     }
+
+     /*PRODUCT DESIGNER BY SECTION END*/
